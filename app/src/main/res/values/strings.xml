@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DrySister</string>
+    <string name="change_image">切换图片</string>
 </resources>
