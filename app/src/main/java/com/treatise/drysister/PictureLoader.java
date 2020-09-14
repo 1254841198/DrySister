@@ -58,8 +58,9 @@ public class PictureLoader {
                     InputStream in = connection.getInputStream();//获取输入流
                     ByteArrayOutputStream out = new ByteArrayOutputStream();
                     byte[] bytes = new byte[1024];
-                    while (in.read(bytes) != -1) {
-                        out.write(bytes);
+                    int length = -1;
+                    while ((length = in.read(bytes)) != -1) {
+                        out.write(bytes, 0, length);
                     }
                     picBytes = out.toByteArray();
                     in.close();
