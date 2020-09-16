@@ -1,5 +1,6 @@
 package com.treatise.drysister.bean.entity;
 
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
